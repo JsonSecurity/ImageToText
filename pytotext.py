@@ -48,16 +48,14 @@ def save_file(text):
 
 if __name__ == '__main__':
     u.clear()
-    print(u.banner)
+    #print(u.banner)
     print(u.tesseract_banner)
     
-    
-
     path = "c:\\src\\images\\"
 
     images_path = dir_image(path)
-    print(f'\n{u._T} Starting\n')
-    sys.exit(1)
+    print(f'\n{u._T} Converting to text...\n')
+
     for path in images_path:
         texto_extraido = image_to_text(path)
 
